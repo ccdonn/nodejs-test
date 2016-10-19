@@ -44,6 +44,10 @@ module.exports = function(app, router) {
     .get(function(req, res){
       console.info('GET /api/v1/merchant/category');
       res.send({status:'_OK'});
+    })
+    .post(function(req, res){
+      console.info('POST /api/v1/merchant/category');
+      res.send({status:'_OK'});
     });
 
   router.route('/:id')
